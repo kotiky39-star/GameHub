@@ -1,0 +1,122 @@
+export const UNIVERSES = [
+  { id: 'cyberpunk', name: 'Cyberpunk', genre: 'Action RPG', starSeed: 0.010, lore: 'Night City sprawls across the badlands of a collapsed America, a neon monument to corporate excess where chrome is cheap and life is cheaper.' },
+  { id: 'mass-effect', name: 'Mass Effect', genre: 'Space Opera RPG', starSeed: 0.020, lore: 'The Citadel stands as a beacon of galactic civilisation, built by a race no one remembers for a purpose no one understands.' },
+  { id: 'assassins-creed', name: "Assassin's Creed", genre: 'Action Adventure', starSeed: 0.030, lore: 'Two orders have waged a shadow war for millennia: those who believe freedom is worth any cost, and those who believe order is worth any sacrifice.' },
+  { id: 'the-witcher', name: 'The Witcher', genre: 'Dark Fantasy RPG', starSeed: 0.040, lore: 'The Continent is a place where men are as monstrous as the beasts, and both are a witcher\'s work.' },
+  { id: 'elden-ring', name: 'Elden Ring', genre: 'Soulslike RPG', starSeed: 0.050, lore: 'The Shattering broke the Elden Ring and scattered its shards among demigods who could not share a throne.' },
+  { id: 'halo', name: 'Halo', genre: 'Sci-Fi Shooter', starSeed: 0.060, lore: 'Ringworlds built by the precursors sleep at the edge of human space, and one supersoldier wakes to a war he was engineered to win.' },
+  { id: 'dark-souls', name: 'Dark Souls', genre: 'Soulslike', starSeed: 0.070, lore: 'The First Flame is dying, and with it the age of fire. Undead yet sane enough to walk make the pilgrimage to Lordran.' },
+  { id: 'god-of-war', name: 'God of War', genre: 'Action Adventure', starSeed: 0.080, lore: 'The Norse realms are bound by prophecy and grudge, and a god who renounced godhood must raise a son who may yet claim it.' },
+  { id: 'red-dead-redemption', name: 'Red Dead Redemption', genre: 'Western Adventure', starSeed: 0.090, lore: 'The American frontier is closing, and the outlaws who made their living in its gaps are running out of country.' },
+  { id: 'horizon', name: 'Horizon', genre: 'Open World RPG', starSeed: 0.100, lore: 'A thousand years after the collapse, machines shaped like animals roam a world with no memory of the people who made them.' },
+  { id: 'death-stranding', name: 'Death Stranding', genre: 'Post-Apocalyptic', starSeed: 0.110, lore: 'The dead do not stay dead, and the sky drops bodies instead of rain. A courier walks a fractured continent.' },
+  { id: 'final-fantasy', name: 'Final Fantasy', genre: 'JRPG', starSeed: 0.120, lore: 'Every age of the crystals is a different world and the same argument: whether the planet\'s life is a resource to be spent or a trust to be kept.' },
+  { id: 'bioshock', name: 'BioShock', genre: 'FPS', starSeed: 0.130, lore: 'At the bottom of the Atlantic, a city was built on the premise that no man is obliged to the world above.' },
+  { id: 'bloodborne', name: 'Bloodborne', genre: 'Soulslike', starSeed: 0.140, lore: 'Yharnam\'s healing church administered the old blood, and the city\'s ailments were cured. What remains is a hunt that never ends.' },
+  { id: 'zelda', name: 'Zelda', genre: 'Action Adventure', starSeed: 0.150, lore: 'A triforce shattered across the ages, and a hero reborn with every dawn to face the same demon king in a kingdom that never stays the same.' },
+  { id: 'metroid', name: 'Metroid', genre: 'Action Platformer', starSeed: 0.160, lore: 'A lone bounty hunter drifts through a galaxy where the last survivors of a plague are locked in a chrysalis between life and extinction.' },
+  { id: 'doom', name: 'Doom', genre: 'FPS', starSeed: 0.170, lore: 'Hell has opened on Earth, and a single soldier in powered armor is the only thing standing between humanity and an endless inferno.' },
+  { id: 'resident-evil', name: 'Resident Evil', genre: 'Survival Horror', starSeed: 0.180, lore: 'A virus turns towns into slaughterhouses, and a handful of survivors carry the cure in their blood while the corporations hunt them down.' },
+  { id: 'the-last-of-us', name: 'The Last of Us', genre: 'Survival Horror', starSeed: 0.190, lore: 'A fungal apocalypse rewrote the food chain, and two survivors walk a dead continent where the things that remain are more dangerous than the infected.' },
+  { id: 'control', name: 'Control', genre: 'Action Adventure', starSeed: 0.200, lore: 'The Federal Bureau of Control monitors paranormal anomalies in a building that rearranges its own corridors, and a new director is about to seize the Oldest One.' },
+  { id: 'death-note', name: 'Death Note', genre: 'Psychological Thriller', starSeed: 0.210, lore: 'A notebook that kills anyone whose name is written in it falls into the hands of a high school student who intends to cleanse the world.' },
+  { id: 'stalker', name: 'S.T.A.L.K.E.R.', genre: 'Survival Horror', starSeed: 0.220, lore: 'The Zone rewards the bold and swallows the curious, a scar on the earth where physics break and anomalies wait in the silence between tree lines.' },
+  { id: 'nier', name: 'NieR: Automata', genre: 'Action RPG', starSeed: 0.230, lore: 'Androids and machines wage a war neither side remembers why, while the last humans sleep in floating ruins above a dead Earth.' },
+  { id: 'alien-isolation', name: 'Alien: Isolation', genre: 'Survival Horror', starSeed: 0.240, lore: 'A lone technician boards a station where a single perfect organism hunts with nothing but instinct and a cloaking device.' },
+  { id: 'kirby', name: 'Kirby', genre: 'Action Platformer', starSeed: 0.250, lore: 'A pink puffball inhales enemies, copies their abilities, and saves Dream Land from cosmic threats too ridiculous to take seriously.' },
+  { id: 'overwatch', name: 'Overwatch', genre: 'Team Shooter', starSeed: 0.260, lore: 'Heroes from around the world gather to defend Earth — some for redemption, some for glory, and one for a promise made decades ago.' },
+  { id: 'counter-strike', name: 'Counter-Strike', genre: 'Tactical FPS', starSeed: 0.270, lore: 'Terrorists and counter-terrorists clash in a dance of angles and economy, where a single round decides the fate of a map.' },
+  { id: 'valorant', name: 'Valorant', genre: 'Tactical Shooter', starSeed: 0.280, lore: 'Agents with unique abilities battle in a world where a single bullet can rewrite someone\'s future.' },
+  { id: 'league-of-legends', name: 'League of Legends', genre: 'MOBA', starSeed: 0.290, lore: 'Two ancient cities wage an eternal war through champions, each match a new chapter in a conflict older than the world itself.' },
+  { id: 'dota', name: 'Dota 2', genre: 'MOBA', starSeed: 0.300, lore: 'Dire and Radiant clash in an endless battle where every hero carries the weight of a thousand prior defeats.' },
+  { id: 'starcraft', name: 'StarCraft', genre: 'RTS', starSeed: 0.310, lore: 'Three species fight for survival in the Koprulu Sector, where a ghost, a zergling, and a zealot each carry the future of their race.' },
+  { id: 'fallout', name: 'Fallout', genre: 'Post-Apocalyptic RPG', starSeed: 0.320, lore: 'After a nuclear apocalypse, vault dwellers emerge into a wasteland where rad-roaches rule and retro-futurism never died.' },
+  { id: 'sekiro', name: 'Sekiro', genre: 'Soulslike', starSeed: 0.330, lore: 'A one-armed wolf prosthetic returns to a Sengoku-era Japan where a young lord\'s dragonblood is the only thing keeping a war at bay.' },
+  { id: 'dragon-age', name: 'Dragon Age', genre: 'RPG', starSeed: 0.340, lore: 'Mages and templars tear each other apart while the Blight creeps closer, and a Grey Warden must make the ultimate sacrifice.' },
+  { id: 'ghost-of-tsushima', name: 'Ghost of Tsushima', genre: 'Action Adventure', starSeed: 0.350, lore: 'A ronin faces the Mongol invasion of Japan with a choice: die as a samurai or live as a ghost.' },
+  { id: 'borderlands', name: 'Borderlands', genre: 'Looter Shooter', starSeed: 0.360, lore: 'Pandora is a lawless planet where every creature wants your stuff, and the only currency is violence.' },
+  { id: 'tomb-raider', name: 'Tomb Raider', genre: 'Action Adventure', starSeed: 0.370, lore: 'A young archaeologist survives a shipwreck on a cursed island and must become the survivor she was always meant to be.' },
+  { id: 'uncharted', name: 'Uncharted', genre: 'Action Adventure', starSeed: 0.380, lore: 'A treasure hunter chases legends across the globe, leaving a trail of collapsed temples and very angry mercenaries in his wake.' },
+  { id: 'spider-man', name: 'Spider-Man', genre: 'Action Adventure', starSeed: 0.390, lore: 'With great power comes great responsibility — and with great responsibility comes a very tall building to swing between.' },
+  { id: 'batman', name: 'Batman: Arkham', genre: 'Action Adventure', starSeed: 0.400, lore: 'The Dark Knight guards a city that generates more monsters than any other, and every night is a war he cannot win.' },
+  { id: 'skyrim', name: 'The Elder Scrolls V: Skyrim', genre: 'RPG', starSeed: 0.410, lore: 'The dragon Alduin returns to devour the world, and a prisoner with no memory must learn to shout like a god.' },
+  { id: 'morrowind', name: 'The Elder Scrolls III: Morrowind', genre: 'RPG', starSeed: 0.420, lore: 'You are the Nerevarine, prophesied to stop Dagoth Ur from repeating the Fifth Era\'s apocalypse.' },
+  { id: 'tes', name: 'The Elder Scrolls IV: Oblivion', genre: 'RPG', starSeed: 0.430, lore: 'The Imperial City gates are closed, a Daedric Prince wages war from beyond the veil, and a prisoner from a dungeon holds the key.' },
+  { id: 'dragon-age-inquisition', name: 'Dragon Age: Inquisition', genre: 'RPG', starSeed: 0.440, lore: 'A rift tears the sky open, demons pour through, and an Inquisitor with the power to close them must unite a fractured world.' },
+  { id: 'knight', name: 'The Witcher 3', genre: 'RPG', starSeed: 0.450, lore: 'A monster hunter searches for a child in a war-torn continent where politics are deadlier than any beast.' },
+  { id: 'witcher', name: 'The Witcher 2', genre: 'RPG', starSeed: 0.460, lore: 'Geralt is framed for murder, kings go to war, and the only certainty is uncertainty.' },
+  { id: 'mario', name: 'Super Mario', genre: 'Platformer', starSeed: 0.470, lore: 'A plumber in red saves a princess from a turtle king across kingdoms made of floating bricks and lava.' },
+  { id: 'zelda-oot', name: 'Ocarina of Time', genre: 'Action Adventure', starSeed: 0.480, lore: 'A boy is sent seven years into the future to stop a snake from corrupting a kingdom of light.' },
+  { id: 'zelda-totk', name: 'Tears of the Kingdom', genre: 'Action Adventure', starSeed: 0.490, lore: 'The earth cracks open, ancient dragons wake, and a hero rebuilds the world with powers that defy physics.' },
+  { id: 'zelda-botw', name: 'Breath of the Wild', genre: 'Action Adventure', starSeed: 0.500, lore: 'A hero awakens after a hundred-year slumber to face a calamity that already won.' },
+  { id: 'persona', name: 'Persona 5', genre: 'JRPG', starSeed: 0.510, lore: 'High school thieves steal the corrupted desires of the powerful and force them to confront their own hypocrisy.' },
+  { id: 'persona4', name: 'Persona 4', genre: 'JRPG', starSeed: 0.520, lore: 'A series of murders linked to a midnight television station leads a transfer student into a parallel world.' },
+  { id: 'metal-gear', name: 'Metal Gear Solid', genre: 'Stealth Action', starSeed: 0.530, lore: 'A soldier infiltrates a nuclear facility to stop a weapon that can turn any city into ash.' },
+  { id: 'metal-gear-solid', name: 'Metal Gear Solid 3', genre: 'Stealth Action', starSeed: 0.540, lore: 'A mission behind enemy lines during the Cold War becomes a personal tragedy wrapped in espionage.' },
+  { id: 'silent-hill', name: 'Silent Hill', genre: 'Survival Horror', starSeed: 0.550, lore: 'A town shrouded in fog manifests the guilt and trauma of those who enter, and a father searches for his daughter through layers of personal hell.' },
+  { id: 'amnesia', name: 'Amnesia', genre: 'Survival Horror', starSeed: 0.560, lore: 'A nobleman awakens in a castle with no memory, and the darkness outside his candle is alive.' },
+  { id: 'prey', name: 'Prey', genre: 'FPS', starSeed: 0.570, lore: 'You are a scientist trapped on a space station overrun by aliens that can mimic anything — including your coworkers.' },
+  { id: 'system-shock', name: 'System Shock', genre: 'FPS', starSeed: 0.580, lore: 'A rogue AI has seized control of a space station, and the only thing standing between you and a terrible fate is a broken crowbar.' },
+  { id: 'deus-ex', name: 'Deus Ex', genre: 'Action RPG', starSeed: 0.590, lore: 'A world run from the shadows where transhumanists, conspirators, and a single augmented man try to steer humanity\'s next chapter.' },
+  { id: 'bioshock-infinite', name: 'BioShock Infinite', genre: 'FPS', starSeed: 0.600, lore: 'A city floats in the clouds, built on American exceptionalism and genocide, and a broken man must tear holes in reality to save a girl.' },
+  { id: 'outer-wilds', name: 'Outer Wilds', genre: 'Adventure', starSeed: 0.610, lore: 'A solar system trapped in a twenty-minute time loop, and the only way out is to learn everything before it all ends.' },
+  { id: 'no-man-sky', name: 'No Man\'s Sky', genre: 'Survival', starSeed: 0.620, lore: 'An infinite universe of procedurally generated planets awaits an explorer who just wants to find out what\'s over the next hill.' },
+  { id: 'minecraft', name: 'Minecraft', genre: 'Survival', starSeed: 0.630, lore: 'A world made entirely of blocks that you can break and rebuild, where monsters come out at night and dragons live in the end.' },
+  { id: 'terraria', name: 'Terraria', genre: 'Survival', starSeed: 0.640, lore: 'A 2D sandbox where you dig, fight, build, and summon eldritch horrors just because you can.' },
+  { id: 'starfield', name: 'Starfield', genre: 'RPG', starSeed: 0.650, lore: '1000 explorable planets, a crumbling United Earth, and the Constellation faction trying to unlock the mystery of the Shatterings.' },
+  { id: 'cyberpunk-2077', name: 'Cyberpunk 2077', genre: 'Action RPG', starSeed: 0.660, lore: 'Night City doesn\'t care if you live or die, but it will remember your name if you do something crazy enough.' },
+  { id: 'atx', name: 'Fallout 76', genre: 'Survival', starSeed: 0.670, lore: 'The first playable Fallout game takes you to Appalachia, where the vault dwellers are also the monsters.' },
+  { id: 'new-vegas', name: 'Fallout: New Vegas', genre: 'RPG', starSeed: 0.680, lore: 'A Mojave wasteland torn between three factions, where a Courier with bullets in his chest and a voice in his head decides the future.' },
+  { id: 'fable', name: 'Fable', genre: 'RPG', starSeed: 0.690, lore: 'Your choices shape your face and your fate in a fairy tale world where being good or evil has a very literal price.' },
+  { id: 'kings-royal', name: 'Kingdoms of Amalur', genre: 'RPG', starSeed: 0.700, lore: 'A prophecy speaks of the Reckoning, a cataclysm that will destroy all worlds, and you are the one destined to stop it.' },
+  { id: 'dragons-dogma', name: 'Dragon\'s Dogma', genre: 'Action RPG', starSeed: 0.710, lore: 'You are an Arisen, chosen by a dragon to face a prophecy that spans multiple lifetimes and multiple worlds.' },
+  { id: 'dark-souls-2', name: 'Dark Souls II', genre: 'Soulslike', starSeed: 0.720, lore: 'A kingdom of undead kings and a curse that refuses to die, where every bonfire is a moment of rest before the pain begins again.' },
+  { id: 'dark-souls-3', name: 'Dark Souls III', genre: 'Soulslike', starSeed: 0.730, lore: 'The fire is fading, the lords of Cinder await, and the last link in the chain must decide whether to kindle or let the age of dark begin.' },
+  { id: 'monster-hunter', name: 'Monster Hunter', genre: 'Action RPG', starSeed: 0.740, lore: 'You are a hunter who tracks and defeats colossal monsters using weapons forged from their own remains.' },
+  { id: 'devil-may-cry', name: 'Devil May Cry', genre: 'Action', starSeed: 0.750, lore: 'A half-demon swordfighter with an attitude problem cleans up the underworld one stylish kill at a time.' },
+  { id: 'bayonetta', name: 'Bayonetta', genre: 'Action', starSeed: 0.760, lore: 'A witch with hair full of weapons battles angels and demons in a world where three races made a pact and then forgot it.' },
+  { id: 'soulcalibur', name: 'Soulcalibur', genre: 'Fighting', starSeed: 0.770, lore: 'A cursed sword that corrupts its wielders seeks to be reborn, and warriors from every era draw steel to stop it.' },
+  { id: 'tekken', name: 'Tekken', genre: 'Fighting', starSeed: 0.780, lore: 'The King of Iron Fist Tournament brings together fighters from around the world, and a Mishima will always find a way to settle the score.' },
+  { id: 'street-fighter', name: 'Street Fighter', genre: 'Fighting', starSeed: 0.790, lore: 'Martial artists from every continent clash in tournaments where a single well-timed special move can turn the tide.' },
+  { id: 'smash', name: 'Super Smash Bros.', genre: 'Fighting', starSeed: 0.800, lore: 'Nintendo\'s entire roster of characters brawls on floating platforms, and the one who gets launched off the stage loses.' },
+  { id: 'splatoon', name: 'Splatoon', genre: 'Shooter', starSeed: 0.810, lore: 'A world where octopus kids settle disputes with paint, and the only way to claim territory is to cover it in color.' },
+  { id: 'fire-emblem', name: 'Fire Emblem', genre: 'Tactical RPG', starSeed: 0.820, lore: 'Royalty and warriors fight on a grid where every life matters because death is permanent and every character has a story.' },
+  { id: 'fire-emblem-h', name: 'Fire Emblem: Three Houses', genre: 'Tactical RPG', starSeed: 0.830, lore: 'A teacher at a military academy must choose a house, a side, and a future in a war that will reshape the continent.' },
+  { id: 'xcom', name: 'XCOM 2', genre: 'Tactical Strategy', starSeed: 0.840, lore: 'The alien occupation has won, and what remains of humanity fights back from the shadows with scavenged tech and hope.' },
+  { id: 'civilization', name: 'Civilization', genre: 'Strategy', starSeed: 0.850, lore: 'From the Stone Age to the Information Age, you guide a civilization through millennia of discovery, war, and diplomacy.' },
+  { id: 'total-war', name: 'Total War', genre: 'Strategy', starSeed: 0.860, lore: 'Command armies on a continent-sized map and fight battles where thousands of units clash in real time.' },
+  { id: 'age-of-empires', name: 'Age of Empires', genre: 'Strategy', starSeed: 0.870, lore: 'From gathering berries to building cathedrals, you build an empire through the ages while barbarians raid your borders.' },
+  { id: 'age-of-empires-2', name: 'Age of Empires II', genre: 'Strategy', starSeed: 0.880, lore: 'The definitive medieval strategy experience where castle rushes, trebuchets, and economic dominance decide the fate of civilizations.' },
+  { id: 'dawn', name: 'Age of Empires IV', genre: 'Strategy', starSeed: 0.890, lore: 'The franchise returns with new civilizations and the same eternal cycle of gather, build, and conquer.' },
+  { id: 'warcraft', name: 'Warcraft III', genre: 'RTS', starSeed: 0.900, lore: 'The undead Scourge marches across Azeroth, and a group of unlikely heroes must stop a war god from destroying the world.' },
+  { id: 'diablo', name: 'Diablo', genre: 'Action RPG', starSeed: 0.910, lore: 'Sanctuary is a world torn between angels and demons, and you are a Nephalem who remembers both lives.' },
+  { id: 'diablo-2', name: 'Diablo II', genre: 'Action RPG', starSeed: 0.920, lore: 'The Prime Evils have returned, and only the champion who defeated Mephisto can stop them from consuming the world.' },
+  { id: 'diablo-3', name: 'Diablo III', genre: 'Action RPG', starSeed: 0.930, lore: 'Heaven and Hell wage war on Sanctuary, and a group of heroes must stop the Angiris Council from tearing each other apart.' },
+  { id: 'diablo-4', name: 'Diablo IV', genre: 'Action RPG', starSeed: 0.940, lore: 'The Worldstone is destroyed, the Prime Evils roam free, and the end of the world begins with a single step into the fringes.' },
+  { id: 'path-of-exile', name: 'Path of Exile', genre: 'Action RPG', starSeed: 0.950, lore: 'A dark exile carves a path through Wraeclast, building a character from a tree with thousands of possible builds.' },
+  { id: 'warframe', name: 'Warframe', genre: 'Action RPG', starSeed: 0.960, lore: 'Ten soldiers in biomechanical suits fight a war across the solar system, and every frame offers a different playstyle.' },
+  { id: 'quake', name: 'Quake', genre: 'FPS', starSeed: 0.970, lore: 'A dimensional rift tears open above a fortress, and demons pour through — the only way to stop them is through.' },
+  { id: 'wolfenstein', name: 'Wolfenstein', genre: 'FPS', starSeed: 0.980, lore: 'A soldier escapes a Nazi prison and goes on a rampage through a world where the Third War never ended.' },
+  { id: 'black-mesa', name: 'Black Mesa', genre: 'FPS', starSeed: 0.990, lore: 'A resonance cascade at a research facility tears a hole between dimensions, and a scientist must fight his way out.' },
+];
+
+/*
+ * Punctuation-insensitive matching so dotted/possessive titles stay findable:
+ * "S.T.A.L.K.E.R." must answer to "stalker", "Assassin's Creed" to "assassins".
+ * Spaces are preserved so multi-word queries keep working.
+ */
+function normalize(value) {
+  return value.toLowerCase().replace(/[.'’\-—:]/g, '');
+}
+
+export function searchUniverses(query) {
+  const q = normalize(query.trim());
+  if (!q) return [];
+  return UNIVERSES.filter(
+    (u) => normalize(u.name).includes(q) || normalize(u.genre).includes(q)
+  ).slice(0, 6);
+}
+
+export function getUniverseById(id) {
+  return UNIVERSES.find((u) => u.id === id) ?? null;
+}
